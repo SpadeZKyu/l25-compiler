@@ -3956,7 +3956,7 @@ yyreduce:
         {
             yyerror(("syntax error, expected \"" +
                      typeTable[typeStk.back()[paramStk.back()]].name +
-                     ", found \"" + typeTable[(yyvsp[0].ival)].name + "\"").c_str());
+                     "\", found \"" + typeTable[(yyvsp[0].ival)].name + "\"").c_str());
             exit(1);
         }
         paramStk.back()++;
@@ -3976,7 +3976,7 @@ yyreduce:
         {
             yyerror(("syntax error, expected \"" +
                      typeTable[typeStk.back()[paramStk.back()]].name +
-                     ", found \"" + typeTable[(yyvsp[0].ival)].name + "\"").c_str());
+                     "\", found \"" + typeTable[(yyvsp[0].ival)].name + "\"").c_str());
             exit(1);
         }
         paramStk.back()++;

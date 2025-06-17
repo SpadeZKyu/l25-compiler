@@ -1785,7 +1785,7 @@ param_list
         {
             yyerror(("syntax error, expected \"" +
                      typeTable[typeStk.back()[paramStk.back()]].name +
-                     ", found \"" + typeTable[$1].name + "\"").c_str());
+                     "\", found \"" + typeTable[$1].name + "\"").c_str());
             exit(1);
         }
         paramStk.back()++;
@@ -1801,7 +1801,7 @@ param_list
         {
             yyerror(("syntax error, expected \"" +
                      typeTable[typeStk.back()[paramStk.back()]].name +
-                     ", found \"" + typeTable[$3].name + "\"").c_str());
+                     "\", found \"" + typeTable[$3].name + "\"").c_str());
             exit(1);
         }
         paramStk.back()++;
