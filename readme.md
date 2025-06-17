@@ -358,7 +358,7 @@ free_call // 释放堆内存，接受任何指针
 |---|---|
 |PADDRL offset|弹出偏移值，计算局部地址 FP+offset 压入栈顶|
 |PADDRA size|弹出索引和基地址，计算数组元素地址 base + index * size 压入栈顶|
-|PADDRF|弹出基地址，计算结构体字段地址 base + offset 压入栈顶|
+|PADDRF offset|弹出基地址，计算结构体字段地址 base + offset 压入栈顶|
 |LOD|弹出地址，加载内存（栈或堆）中的值压入栈顶|
 |STR|弹出值和地址，将值存储到内存（栈或堆）|
 |ALLOC|弹出所需字节数，调用分配器获得堆地址压入栈顶|
