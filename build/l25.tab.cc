@@ -2356,7 +2356,7 @@ yyreduce:
         declare((yyvsp[-13].sval), type, entAddr, SCOPE_GLOBAL);
         code[addsp].val = curLocal;
 
-        for (int i = typeTable[(yyvsp[-6].ival)].size; i--; )
+        for (int i = 0; i < typeTable[(yyvsp[-6].ival)].size; i++)
         {
             emit("PADDRL", -3 - funcDef[typeTable[type].index].argSize - i);
             emit("SWAP", 1);

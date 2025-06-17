@@ -469,7 +469,7 @@ func_def
         declare($2, type, entAddr, SCOPE_GLOBAL);
         code[addsp].val = curLocal;
 
-        for (int i = typeTable[$9].size; i--; )
+        for (int i = 0; i < typeTable[$9].size; i++)
         {
             emit("PADDRL", -3 - funcDef[typeTable[type].index].argSize - i);
             emit("SWAP", 1);
